@@ -61,3 +61,13 @@ function timer(seconds) {
     // set timer for seconds
     timer(seconds);
   }
+
+  buttons.forEach(button => button.addEventListener('click', startTimer));
+  document.customForm.addEventListener('submit', function(e) {
+    // prevent from opening a new browser window
+    e.preventDefault();
+    const mins = this.minutes.value;
+    console.log(mins);
+    timer(mins * 60);
+    this.reset();
+  });
