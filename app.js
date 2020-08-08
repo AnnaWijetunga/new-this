@@ -53,7 +53,7 @@ function timer(seconds) {
     const hour = end.getHours();
     const adjustedHour = hour > 12 ? hour - 12 : hour;
     const minutes = end.getMinutes();
-    endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
+    endTime.textContent = `Be back at ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
   }
 
   function startTimer() {
