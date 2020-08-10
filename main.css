@@ -1,5 +1,9 @@
-body {
+body,
+html,
+main 
+{
     font-family: helvetica;
+    height: 100%;
 }
 
 ul {
