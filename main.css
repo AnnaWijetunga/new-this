@@ -7,6 +7,10 @@ main
     width: 100%;
 }
 
+main {
+    display: flex;
+}
+
 ul {
     font-family: monospace;
 }
